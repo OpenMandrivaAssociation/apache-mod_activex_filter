@@ -23,6 +23,7 @@ BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	file
 Requires:	apache-mod_proxy
 Epoch:		1
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 It's only a simple hack of mod_case_filter to get a way to filter
