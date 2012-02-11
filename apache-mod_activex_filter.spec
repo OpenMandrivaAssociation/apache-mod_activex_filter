@@ -6,7 +6,7 @@
 Summary:	Apache module that filter ActiveX on a proxy
 Name:		apache-%{mod_name}
 Version:	0.2b
-Release:	%mkrel 14
+Release:	%mkrel 15
 Group:		System/Servers
 License:	Apache License
 URL:		http://brice.free.fr
