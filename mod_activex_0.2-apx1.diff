@@ -1,0 +1,14 @@
+--- activex_filter/mod_activex_filter.c	2003-06-24 15:21:43.000000000 +0200
++++ activex_filter/mod_activex_filter.c.oden	2005-12-15 19:16:30.000000000 +0100
+@@ -106,8 +106,9 @@
+ 
+     pbbOut = apr_brigade_create(r->pool, c->bucket_alloc);
+ 
+-    APR_BRIGADE_FOREACH(pbktIn,pbbIn)
+-	{
++    for (pbktIn = APR_BRIGADE_FIRST(pbbIn);
++         pbktIn != APR_BRIGADE_SENTINEL(pbbIn);
++         pbktIn = APR_BUCKET_NEXT(pbktIn)) {
+ 	const char *data;
+ 	apr_size_t len;
+ 	char *buf;
