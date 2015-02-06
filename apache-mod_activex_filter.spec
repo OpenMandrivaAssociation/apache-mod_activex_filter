@@ -6,7 +6,7 @@
 Summary:	Apache module that filter ActiveX on a proxy
 Name:		apache-%{mod_name}
 Version:	0.2b
-Release:	16
+Release:	17
 Epoch:		1
 Group:		System/Servers
 License:	Apache License
