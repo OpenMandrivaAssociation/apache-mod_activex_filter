@@ -10,7 +10,7 @@ Release:	17
 Epoch:		1
 Group:		System/Servers
 License:	Apache License
-URL:		http://brice.free.fr
+URL:		https://brice.free.fr
 Source0:	mod_activex_%{version}.tar.bz2
 Source1:	%{mod_conf}.bz2
 Patch0:		mod_activex_0.2-apx1.diff
